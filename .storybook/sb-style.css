@@ -1,0 +1,35 @@
+* .token,
+.prismjs,
+code,
+kbd,
+pre,
+samp {
+  font-family: "Source Code Pro", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter",
+    "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier,
+    monospace !important;
+}
+
+hr:not(.sb-unstyled) {
+  /* For the doc footer */
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+/* :not(.docs-story) a:hover {
+  opacity: 0.8;
+} */
+
+blockquote:not(.sb-anchor, .sb-unstyled, .sb-unstyled blockquote) {
+  background-color: hsl(220 25% 98%);
+  padding: 0.75rem 1.25rem;
+  border-width: 0;
+  border-radius: 12px;
+}
+
+@layer tailwind-base {
+  ol,
+  ul,
+  menu {
+    list-style: auto;
+  }
+}

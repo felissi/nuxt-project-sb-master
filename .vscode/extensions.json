@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "lokalise.i18n-ally",
+    "vue.vscode-typescript-vue-plugin",
+    "vue.volar",
+    "antfu.iconify",
+    "gruntfuggly.todo-tree",
+    "bradlc.vscode-tailwindcss",
+    "dbaeumer.vscode-eslint",
+    "heybourn.headwind",
+    "esbenp.prettier-vscode"
+  ]
+}

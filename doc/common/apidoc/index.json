@@ -1,0 +1,16 @@
+{
+    "components/star": {},
+    "components/star/atom": {},
+    "components/star/organisms": {},
+    "components/star/pages": {},
+    "components/star/templates": {},
+    "components/ui": {},
+    "components/ui/command": {},
+    "components/ui/dialog": {},
+    "components/ui/dropdown-menu": {},
+    "components/ui/popover": {},
+    "components/ui/select": {},
+    "composables": {},
+    "services/api": {},
+    "utils": {}
+}

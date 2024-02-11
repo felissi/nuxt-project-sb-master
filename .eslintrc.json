@@ -1,0 +1,103 @@
+{
+  "env": {
+    "browser": true
+  },
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser",
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "project": "./tsconfig.json",
+    "extraFileExtensions": [
+      ".vue"
+    ]
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "import"
+  ],
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [
+        ".ts",
+        ".tsx"
+      ]
+    },
+    "import/resolver": {
+      "typescript": {
+        // always try to resolve types under `<root>@types` directory even it doesn't contain any source code, like `@types/unist`
+        "alwaysTryTypes": true,
+        "project": "./tsconfig.json"
+      }
+    }
+  },
+  "extends": [
+    "@nuxtjs/eslint-config-typescript",
+    "plugin:vue/vue3-recommended",
+    "plugin:storybook/recommended",
+    "eslint:recommended",
+    "airbnb-base"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "*.ts",
+        "*.tsx"
+      ],
+      "extends": [
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking"
+      ],
+      "parser": "@typescript-eslint/parser"
+    }
+  ],
+  "rules": {
+    "vue/multi-word-component-names": "off",
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "imports": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "never"
+      }
+    ],
+    "quotes": [
+      "error",
+      "double",
+      {
+        "avoidEscape": true
+      }
+    ],
+    "indent": [
+      "error",
+      2
+    ],
+    "space-before-function-paren": [
+      "error",
+      "never"
+    ],
+    "import/extensions": "off",
+    "import/prefer-default-export": "off",
+    "import/no-unresolved": "error",
+    "no-undef": "warn",
+    "sort-imports": "off",
+    "no-console": "error",
+    "vue/attribute-hyphenation": "off",
+    "arrow-body-style": "off",
+    "operator-linebreak": "off",
+    "vue/html-self-closing": [
+      "error",
+      {
+        "html": {
+          "normal": "never",
+          "void": "always"
+        }
+      }
+    ]
+  }
+}

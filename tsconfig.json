@@ -1,0 +1,14 @@
+{
+  // https://nuxt.com/docs/guide/concepts/typescript
+  "extends": "./.nuxt/tsconfig.json",
+  "exclude": [
+    "**/*.stories.ts",
+    "**/*.test.ts",
+    "**/*-tv.ts",
+    "run-typedoc.js",
+    "**/services/api/jwt.ts",
+    "**/services/api/load-meta.ts",
+    "**/services/**/*.ts",
+    "**/services/api/*.ts",
+  ]
+}

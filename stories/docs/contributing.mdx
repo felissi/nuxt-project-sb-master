@@ -1,0 +1,125 @@
+import { EditThisPage, LastModified } from "#storybook/blocks";
+
+
+
+Thanks for contributing to STAR UI 💖
+
+Here's a few guidelines that should help you as you
+prepare your contribution.
+
+## Setup the Project
+
+The following steps will get you up and running to contribute to Chakra UI:
+
+1. Clone the repo locally
+
+2. Setup all the dependencies and packages by running `npm install`. This
+   command will install dependencies.
+
+> If you run into any issues during this step, kindly reach out to the team.
+
+## Development
+
+
+
+### Tooling
+
+
+
+- [Storybook](https://storybook.js.org/) for rapid UI component development and
+  testing
+- [vue-i18n](https://vue-i18n.intlify.dev/guide/introduction.html) and [i18n Ally](https://marketplace.visualstudio.com/items?itemName=lokalise.i18n-ally)
+- [Rollup Plugin Visualizer](https://github.com/btd/rollup-plugin-visualizer) to visualize and analyze bundle to see which modules are taking up space.
+- [Mock Service Worker](https://mswjs.io/) to mock API
+- GitHub Actions
+
+
+
+### Commands
+
+**`npm install`**: bootstraps the entire project, symlinks all dependencies for
+cross-component development and builds all components.
+
+**`npm run storybook`**: starts storybook server.
+
+**`npm run build`**: run build for all component packages.
+
+**`npm run test`**: run test for all component packages.
+
+**`npm run dev`**: run a development server.
+
+
+
+## Think you found a bug?
+
+Please conform to the issue template and provide a clear path to reproduction
+with any photo, video, log, network record. It would be great to have the API response like HAR or plain text, so the reproduction would be easiler.
+
+You may wish to file a bug report via [github](https://github.com/eclhk/star-website-home-client/issues/new).
+
+
+{/* ## Making a Pull Request?
+
+Pull requests need only the :+1: of two or more collaborators to be merged; when
+the PR author is a collaborator, that counts as one. */}
+
+### Commit Convention
+
+Before you create a Pull Request, please check whether your commits comply with
+the commit conventions used in this repository.
+
+When you create a commit we kindly ask you to follow the convention
+`category(scope or module): message` in your commit message while using one of
+the following categories:
+
+- `feat`: all changes that introduce completely new code or new
+  features
+- `fix`: changes that fix a bug (ideally you will additionally reference an
+  issue if present). like `fix(something): #234 ...`.
+- `refactor`: any code related change that is not a fix nor a feature
+- `docs`: changing existing or creating new documentation (i.e. README, docs for
+  usage of a lib or cli usage)
+- `build`: all changes regarding the build of the software, changes to
+  dependencies or the addition of new dependencies
+- `test`: all changes regarding tests (adding new tests or changing existing
+  ones)
+- `ci`: all changes regarding the configuration of continuous integration (i.e.
+  github actions, ci system)
+- `chore`: all changes to the repository that do not fit into any of the above
+  categories
+
+If you are interested in the detailed specification you can visit
+[https://www.conventionalcommits.org/](https://www.conventionalcommits.org/) or check out the
+[Angular Commit Message Guidelines](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines).
+
+### Steps to PR
+
+1. PRs should come from a issue, a issue should have name like `[Bug]: ...` or `[Feat]: ...`, so the branch created from that issue will automatically have a name like `bug-XX-...` or `feat-XX-...`.
+
+2. Create a new branch out of the `main` branch, which should attach to the issue. We follow the convention `[type-<issue name>]`. For example `fix-23-class-display` or `docs-234-menu-typo`. `type`
+   can be either `docs`, `fix`, `feat`, `build`, or any other conventional
+   commit type.
+
+3. Make and commit your changes following the commit convention.
+
+
+### Tests
+
+All commits that fix bugs or add features need a test. We leverage vitest, cypress and storybook for unit test, component test, visual test and end-to-end test.
+
+## Want to help improve the docs?
+
+This docs lives in `/stories/docs`, any change in the docs will be automatically deployed through CICD, with the latest commit time updated. Great to have you 🍔.
+
+## License
+
+Most of the libraries we used are under the MIT license. We should provide license in the code base, and by contributing to the code, you agree to license your contribution under the license.
+
+## Acknowledge
+
+This contributing guidelines referenced a lots from [Chakra UI](https://chakra-ui.com/).
+
+---
+
+<LastModified>2024-01-08 06:56:36</LastModified>
+<EditThisPage>stories/docs/contributing.mdx</EditThisPage>

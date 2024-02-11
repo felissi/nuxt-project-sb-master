@@ -1,0 +1,47 @@
+// {
+//     "$schema": "https://typedoc.org/schema.json",
+//     "name": "Good Name",
+//     "entryPoints": [
+//         "."
+//     ],
+//     "sort": [
+//         "alphabetical"
+//     ],
+//     "media": "media",
+//     "categorizeByGroup": true,
+//     "searchCategoryBoosts": {
+//         "Component": 2,
+//         "Model": 1.2,
+//     },
+//     "searchGroupBoosts": {
+//         "Classes": 1.5
+//     },
+//     "navigationLinks": {
+//         "Docs": "https://typedoc.org/guides/overview",
+//         "GitHub": "https://github.com/TypeStrong/typedoc",
+//         "Google": "https://google.com",
+//     },
+//     "sidebarLinks": {
+//         "References": "https://typedoc.org/api",
+//         "Google": "https://google.com"
+//     },
+//     "entryPointStrategy": "expand",
+//     "exclude": [
+//         "**/index.ts",
+//         "**/*.stories.ts",
+//         "**/*-tv.ts",
+//         "./.storybook/**/*",
+//         "./stories/**/*"
+//     ],
+//     "sourceLinkTemplate": "https://google.com?q={path}:{line}",
+//     "plugin": [
+//         "typedoc-plugin-merge-modules",
+//         "typedoc-plugin-markdown"
+//     ],
+//     "visibilityFilters": {
+//         "protected": false,
+//         "private": false,
+//         "inherited": true,
+//         "external": false
+//     }
+// }
