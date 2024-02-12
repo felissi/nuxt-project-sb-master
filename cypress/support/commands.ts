@@ -35,3 +35,5 @@
 //     }
 //   }
 // }
+require("@cypress/snapshot").register();
+require("@frsource/cypress-plugin-visual-regression-diff");

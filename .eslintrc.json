@@ -16,7 +16,8 @@
   },
   "plugins": [
     "@typescript-eslint",
-    "import"
+    "import",
+    "cypress"
   ],
   "settings": {
     "import/parsers": {
@@ -38,7 +39,8 @@
     "plugin:vue/vue3-recommended",
     "plugin:storybook/recommended",
     "eslint:recommended",
-    "airbnb-base"
+    "airbnb-base",
+    "plugin:cypress/recommended"
   ],
   "overrides": [
     {
@@ -98,6 +100,12 @@
           "void": "always"
         }
       }
-    ]
+    ],
+    "cypress/no-assigning-return-values": "error",
+    "cypress/no-unnecessary-waiting": "error",
+    "cypress/assertion-before-screenshot": "warn",
+    "cypress/no-force": "warn",
+    "cypress/no-async-tests": "error",
+    "cypress/no-pause": "error"
   }
 }
